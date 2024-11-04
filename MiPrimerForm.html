@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="es">
+	<head>
+		<link rel="stylesheet" href="estilos.css">
+	</head>
+	<body>
+	<!-- Formulario basico (Ejemplo basado en el de https://www.htmlquick.com/es/tutorials/forms/4.html) -->
+	
+	<!-- USO DEL FORM MONTADO EN XAMPP EN LOCAL (DESCOMENTA ESTA LÍNEA) -->
+	<!--
+	<form action="envio.php" target="_blank" method="POST">
+	-->
+
+	<!-- USO DEL FORM REMOTO DE TESTEO -->
+	<form action="https://formtester.goodbytes.be/post.php" method="post">
+
+		<h1><div id="demotext">FORMULARIO DE CONTACTO</div></h1>
+		<p>Este form se envía a una web de terceros, no introduzcas información personal ni contraseñas.</p>
+		<p>Tu nombre: <input type="text" name="nombre"></p>
+
+		<p>Tu dirección de correo electronico: <input type="text" name="correo"></p>
+		<p>Tu edad: <input type="text" name="edad"></p>
+
+		<p>Tu mensaje:<br>
+			<textarea name="mensaje"></textarea>
+		</p>
+
+
+		<p>Tu función:
+			<select name="funcion">
+				<option value="Profesor">Profesor
+				<option value="Alumno">Alumno
+				<option value="Usuario Externo">Usuario Externo
+			</select>
+			
+		</p>
+		<p>¿Quieres que te contestemos por email?
+		<select name="envioEmail">
+			<option value="si">Si
+			<option value="no">No
+		</select>
+		</p>
+		
+		<input type="submit" value="Enviar mensaje">
+		<a href="mailto:santiagotorregrosa@gmail.com">Enviar correo</a>
+	</form>
+	
+	</body>
+</html>
